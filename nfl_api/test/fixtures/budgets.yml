@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number_of_players: 1
+  quarterback: 1
+  running_back: 1
+  wide_reciever: 1
+  tight_end: 1
+  offensive_lineman: 1
+  defensive_lineman: 1
+  linebacker: 1
+  defensive_back: 1
+  kicker: 1
+  total_budget_spent: 1
+  team: MyString
+
+two:
+  number_of_players: 1
+  quarterback: 1
+  running_back: 1
+  wide_reciever: 1
+  tight_end: 1
+  offensive_lineman: 1
+  defensive_lineman: 1
+  linebacker: 1
+  defensive_back: 1
+  kicker: 1
+  total_budget_spent: 1
+  team: MyString

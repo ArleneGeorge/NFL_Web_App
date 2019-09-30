@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  stadium_name: MyString
+  stadium_location: MyString
+  latitude: 1
+  longitude: 
+  capacity: 1
+  conference: 1
+
+two:
+  name: MyString
+  stadium_name: MyString
+  stadium_location: MyString
+  latitude: 1
+  longitude: 
+  capacity: 1
+  conference: 1
