@@ -22,3 +22,11 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+After downloading this repository you will need to cd into nfl-api run rails db:migrate in the command line. 
+
+Next run rails db:seed and wait as patiently as you can. There are many files that need to be uploaded to the tables. 
+
+Run rails s to start the bakend of the server. 
+
