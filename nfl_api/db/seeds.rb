@@ -7,8 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Team.destroy_all
 Budget.destroy_all
+Player.destroy_all
+Team.destroy_all
 
 cardinals = Team.create(name:	"Arizona Cardinals"	,	stadium_name:	"State Farm Stadium"	,	stadium_location:	"Glendale, Arizona"	,	latitude:	33.5277	,	longitude:	-112.262608	,	capacity:	63400	,	conference:	"NFC"	)
 falcons = Team.create(name:	"Atlanta Falcons"	,	stadium_name:	"Mercedes-Benz Stadium"	,	stadium_location:	"Atlanta, Georgia"	,	latitude:	33.757614	,	longitude:	-84.400972	,	capacity:	71000	,	conference:	"NFC"	)
@@ -76,4 +77,18 @@ Budget.create(number_of_players:	53	,	quarterback:	26.90	,	running_back:	5.5	,	w
 Budget.create(number_of_players:	53	,	quarterback:	22.20	,	running_back:	4.9	,	wide_reciever:	21.9	,	tight_end:	11.2	,	offensive_lineman:	41.8	,	defensive_lineman:	21.6	,	linebacker:	26.8	,	defensive_back:	11.8	,	kicker:	3.7	,	total_budget_spent:	165.9	,	team:	buccaneers)
 Budget.create(number_of_players:	53	,	quarterback:	22.80	,	running_back:	7.9	,	wide_reciever:	15.8	,	tight_end:	7.9	,	offensive_lineman:	22.9	,	defensive_lineman:	25.0	,	linebacker:	19.0	,	defensive_back:	37.7	,	kicker:	4.9	,	total_budget_spent:	163.8	,	team:	titans)
 Budget.create(number_of_players:	53	,	quarterback:	9.50	,	running_back:	6.4	,	wide_reciever:	10.1	,	tight_end:	17.2	,	offensive_lineman:	27.6	,	defensive_lineman:	10.9	,	linebacker:	21.3	,	defensive_back:	27.8	,	kicker:	6.2	,	total_budget_spent:	137.0	,	team:	redskins)
+
+
+csv_text = File.read("Basic_Stats.csv")
+csv = CSV.parse(csv_text, :headers => true)
+csv.each do |row|
+    team = Team.find_by(name: row['Current Team'])
+    Player.create(name: row["Name"], number: row["Number"], age: row["Age"], birth_place: row["Birth Place"], high_school: row["High School"], college: row["College"], position: row["Position"], height: row["Height (inches)"], weight: row["Weight (lbs)"], experience: row["Experience"], team: team)
+end
+
+
+
+
+
+
 

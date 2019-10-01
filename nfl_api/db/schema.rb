@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_30_220222) do
+ActiveRecord::Schema.define(version: 2019_10_01_152434) do
 
   create_table "budgets", force: :cascade do |t|
     t.float "number_of_players"
@@ -30,6 +30,23 @@ ActiveRecord::Schema.define(version: 2019_09_30_220222) do
     t.index ["team_id"], name: "index_budgets_on_team_id"
   end
 
+  create_table "players", force: :cascade do |t|
+    t.string "name"
+    t.integer "number"
+    t.integer "age"
+    t.text "birth_place"
+    t.text "high_school"
+    t.text "college"
+    t.string "position"
+    t.float "height"
+    t.float "weight"
+    t.string "experience"
+    t.integer "team_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["team_id"], name: "index_players_on_team_id"
+  end
+
   create_table "teams", force: :cascade do |t|
     t.string "name"
     t.string "stadium_name"
@@ -43,4 +60,5 @@ ActiveRecord::Schema.define(version: 2019_09_30_220222) do
   end
 
   add_foreign_key "budgets", "teams"
+  add_foreign_key "players", "teams"
 end
