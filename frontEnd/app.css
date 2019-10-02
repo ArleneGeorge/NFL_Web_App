@@ -20,22 +20,45 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+
 /* start of my code  */
-.cards {
-    font-weight: bold;
+.team {
+     height: 200px; 
+     width: 200px;
+     justify-items: center;
+     font-family: 'Alegreya SC', serif;
 }
 
-body {
+.cards{
     display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 30px;
     
-    
+}
+
+
+body{
+    background-image: url("https://newsroom.cisco.com/documents/10157/14740/nfl-football-realtime-feature_1200x675_hero_091317.jpg/213e019f-4c34-456a-b316-e15413192bfd?t=1505336813842" );
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header{
+    font-family: 'Alegreya SC', serif;
+    color: antiquewhite;
+    font-size: 90px;
+    content: center;
     
 }
 
 a{
     text-decoration: none;
-    color: #D50A0A;
-    padding-bottom: 5rem;
+    color: antiquewhite;
+    font-size: 20px;
 
 }
 
