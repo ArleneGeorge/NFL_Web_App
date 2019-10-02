@@ -31,7 +31,8 @@ ActiveRecord::Schema.define(version: 2019_10_01_152434) do
   end
 
   create_table "players", force: :cascade do |t|
-    t.string "name"
+    t.string "first_name"
+    t.string "last_name"
     t.integer "number"
     t.integer "age"
     t.text "birth_place"
@@ -55,6 +56,7 @@ ActiveRecord::Schema.define(version: 2019_10_01_152434) do
     t.float "longitude"
     t.integer "capacity"
     t.string "conference"
+    t.string "logo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
