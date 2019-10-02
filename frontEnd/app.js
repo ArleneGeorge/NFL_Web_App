@@ -7,27 +7,16 @@ function createCards(teams){
 
     teams.forEach(team => {
         let a = document.createElement('a')
+        let img = document.createElement('img')
+       
 
-        a.innerText = `${team.name} \n \n`
+        a.innerText = `\n\n${team.name} \n`
         a.href = `teams.html?id=${team.id}`
+        img.src = team.logo
 
-        div.append(a)
-    })
-    body.appendChild(div)
-}
+        
 
-function playersInfo(players){
-    let div = document.createElement('div')
-    div.className = "cards"
-
-
-    players.forEach(player => {
-        let a = document.createElement('a')
-
-        a.innerText = `${player.name} \n \n`
-        a.href = `players.html?id=${player.id}`
-
-        div.append(a)
+        div.append(a, img)
     })
     body.appendChild(div)
 }
@@ -41,7 +30,3 @@ function playersInfo(players){
 fetch('http://localhost:3000/teams')
     .then(response => response.json())
     .then(createCards)
-
-    fetch('http://localhost:3000/players')
-    .then(response => response.json())
-    .then(playersInfo)

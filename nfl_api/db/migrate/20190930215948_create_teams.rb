@@ -8,6 +8,7 @@ class CreateTeams < ActiveRecord::Migration[6.0]
       t.float :longitude
       t.integer :capacity
       t.string :conference
+      t.string :logo
 
       t.timestamps
     end

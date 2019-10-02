@@ -16,8 +16,8 @@ const query  = searchParams.get('id')
         
         
 
-        h1.innerText = `${player.name}`
-         p.innerText = `${player.name}'s Stats \n ${player.number} \n age: ${player.age} \n Birth Place ${player.birth_place} \n High School Attended ${player.high_school} \n College attended  ${player.college} \n Football Position ${player.position} \n Height ${player.height}inches \n Weight ${player.weight}lbs \n Seasons Played  ${player.experiene} \n`
+        h1.innerText = `${player.first_name} ${player.last_name}`
+         p.innerText = `${player.first_name} ${player.last_name}'s Stats \n Jersey Number: ${player.number} \n age: ${player.age} \n Birth Place: ${player.birth_place} \n High School Attended: ${player.high_school} \n College Attended:  ${player.college} \n Football Position: ${player.position} \n Height: ${player.height}inches \n Weight: ${player.weight}lbs \n Seasons Played:  ${player.experience} \n`
 
       
         
