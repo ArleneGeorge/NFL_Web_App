@@ -1,5 +1,4 @@
-
-html, body, div, span, applet, object, iframe,
+ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -55,12 +54,13 @@ time, mark, audio, video {
 
 li {
     display:inline;
+    padding-left: 10px;
   }
 
-  ul{
-    height: 30px;
-    padding-left: 60px;
-  }
+   ul{
+       padding-left: 40%;
+
+  } 
 
 
 body{
@@ -84,16 +84,22 @@ header{
     
     font-family: 'Alegreya SC', serif;
     color: antiquewhite;
+    background-color: rgba(238, 238, 240, 0.2);
+}
+
+.headerTwo{
+    font-family: 'Alegreya SC', serif;
+    color: antiquewhite;
     font-size: 90px;
     background-color: rgba(238, 238, 240, 0.2);
+    text-align: center;
+
 }
 
 nav {
     display: flex;
-    width: 300px;
-    margin: auto;
+    width: 100%;
     justify-content: space-between;
-    padding-left: 65rem;
 }
 
 
@@ -148,6 +154,12 @@ padding-left: 4rem;
     text-align: center;
 }
 
+.allPlayerHeader{
+    text-align: center;
+    padding-top: 1rem;
+    padding-right: 5rem;
+}
+
 
 .budgetInfo{
     font-weight: 10px;
@@ -156,4 +168,24 @@ padding-left: 4rem;
 
 .teamNameCard{
     justify-content: center;
+}
+
+.secondHeader{
+    font-family: 'Alegreya SC', serif;
+    color: antiquewhite;
+    font-size: 90px;
+    background-color: rgba(238, 238, 240, 0.2);
+    text-align: center;
+
+}
+
+.teamBudgetLowerHeader{
+    font-family: 'Alegreya SC', serif;
+    color: antiquewhite;
+    font-size: 90px;
+    background-color: rgba(238, 238, 240, 0.2);
+    text-align: center;
+    padding-right: 2.8rem;
+    padding-top: 1rem;
+
 }
