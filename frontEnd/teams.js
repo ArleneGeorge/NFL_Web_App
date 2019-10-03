@@ -4,9 +4,8 @@ const query  = searchParams.get('id')
 
 
     function createCard(team){
-
-        let header = document.querySelector('header')
-        header.className = "teamHeader"
+        let secondHeader = document.createElement('div')
+        secondHeader.className = "secondHeader"
         let div = document.createElement('div')
         div.className = "players"
 
@@ -25,7 +24,7 @@ const query  = searchParams.get('id')
         
       
 
-        header.append(h1, img, h5 )
+        secondHeader.append(h1, img, h5 )
 
         team.budgets.forEach(budget => {
             let a2 = document.createElement('a')
@@ -34,7 +33,7 @@ const query  = searchParams.get('id')
             a2.href = `\nbudgets.html?id=${budget.id} `
             a2.innerText = `Team Budget \n`
 
-            header.appendChild(a2)
+            secondHeader.appendChild(a2)
         })
 
 
@@ -50,6 +49,7 @@ const query  = searchParams.get('id')
     
             div.append(createCards)
         })
+        body.appendChild(secondHeader)
         body.appendChild(div)
     }
                 
