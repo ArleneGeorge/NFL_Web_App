@@ -23,10 +23,12 @@ time, mark, audio, video {
 
 /* start of my code  */
 .team {
-     height: 200px; 
-     width: 200px;
-     justify-items: center;
+    display: block;
+    justify-items: center;
+     height: 350px; 
+     width: 320px;
      font-family: 'Alegreya SC', serif;
+     
 }
 
 .cards{
@@ -35,8 +37,30 @@ time, mark, audio, video {
     margin: auto;
     grid-template-columns: repeat(4, 25%);
     column-gap: 30px;
+    padding-top: 5rem;
     
 }
+
+.players{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 10px;
+    padding-top: 2rem;
+    font-size: 65px; 
+    
+}
+
+
+li {
+    display:inline;
+  }
+
+  ul{
+    height: 30px;
+    padding-left: 60px;
+  }
 
 
 body{
@@ -45,24 +69,91 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    
+    
+}
+
+.homeHeader{
+    margin: 0 auto 18px;
+    overflow: hidden;
+    text-align: center;
+    height: 50rem;
 }
 
 header{
+    
     font-family: 'Alegreya SC', serif;
     color: antiquewhite;
     font-size: 90px;
-    content: center;
-    
+    background-color: rgba(238, 238, 240, 0.2);
 }
+
+nav {
+    display: flex;
+    width: 300px;
+    margin: auto;
+    justify-content: space-between;
+    padding-left: 65rem;
+}
+
+
 
 a{
     text-decoration: none;
     color: antiquewhite;
-    font-size: 20px;
+    font-size: 30px;
+    text-shadow: 2px 2px #b40606;
+}
+.budgetLink{
+    padding-top: -3rem;
 
 }
+
+h1{
+    color: antiquewhite;
+    font-size: 50px;
+    text-shadow: 2px 2px #b40606;
+}
+
+h2{
+    color: antiquewhite;
+    font-size: 50px;
+    text-shadow: 2px 2px #b40606;
+    
+
+}
+
+
+h5 {
+    color: antiquewhite;
+    font-size: 20px;
+    text-shadow: 2px 2px #b40606;
+}
+p{
+    color: antiquewhite;
+    font-size: 20px;
+    text-shadow: 2px 2px #b40606;
+
+}
+
+
 
 img{
 height: auto;
 width: 150px;
+padding-left: 4rem;
+}
+
+.teamHeader{
+    text-align: center;
+}
+
+
+.budgetInfo{
+    font-weight: 10px;
+    padding-bottom: 20px;
+}
+
+.teamNameCard{
+    justify-content: center;
 }
