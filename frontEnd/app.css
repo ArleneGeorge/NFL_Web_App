@@ -50,11 +50,20 @@ time, mark, audio, video {
     font-size: 65px; 
     
 }
+.filterByPosition{
+    font-family: 'Alegreya SC', serif;
+    color: antiquewhite;
+    text-shadow: 2px 2px #b40606;
+    font-size: 20px;
+    padding-top: 2rem;
+    padding-left: 25rem;
+
+}
 
 
 li {
     display:inline;
-    padding-left: 10px;
+    padding-left: 15px;
   }
 
    ul{
@@ -78,6 +87,15 @@ body{
     overflow: hidden;
     text-align: center;
     height: 50rem;
+}
+
+.filterByDivision{
+    font-family: 'Alegreya SC', serif;
+    color: antiquewhite;
+    text-shadow: 2px 2px #b40606;
+    font-size: 20px;
+    padding-top: 2rem;
+
 }
 
 header{

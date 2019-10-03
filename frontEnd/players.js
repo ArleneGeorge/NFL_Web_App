@@ -28,7 +28,7 @@ const query  = searchParams.get('id')
 
     
     }
-    
+
     
     fetch(`http://localhost:3000/players/${query}`)
     .then (response => response.json())
