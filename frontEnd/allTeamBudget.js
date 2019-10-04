@@ -16,15 +16,19 @@ function teamCards(teams){
         div_theBack.className = "theBack"
 
         let p_theFront = document.createElement('p')
+        let img = document.createElement('img')
+        p_theFront.className = "budgetTeamName"
+        img.className = "budgetLogo"
 
 
         p_theFront.innerText = team.name 
+        img.src = team.logo
 
         team.budgets.forEach(budget => {
             let canvas_myChart = document.createElement('canvas');
             canvas_myChart.className = "myChart";
             canvas_myChart.getContext('2d');
-            
+
             //Global Options 
                 Chart.defaults.global.defaultFontFamily = 'lato'; 
                 Chart.defaults.global.defaultFontFamily = 18;
@@ -56,18 +60,25 @@ function teamCards(teams){
                                 'rgba(54, 206, 86, 0.6', 
                                 'rgba(76, 192, 192,0.6', 
                                 'rgba(53, 102, 255, 0.6', 
-                                'rgba(255, 99, 64, 0.6' 
+                                'rgba(255, 99, 64, 0.6', 
+                                'rgba(255, 99, 132, 0.6', 
+                                'rgba(54, 206, 86, 0.6', 
+                                'rgba(76, 192, 192,0.6', 
+                                'rgba(53, 102, 255, 0.6',
+                                'rgba(255, 99, 64, 0.6',
+                                'rgba(255, 99, 132, 0.6'
                             ],
                             borderWidth: 1, 
                             borderColor: '#777',
                             hoverBorderWidth: 3, 
                             hoverBorderColor: 'red'
+                            
                         }]
                     }, 
                     option: {
                         title:{
                             display:true, 
-                            text: 'Largest Cities in Massachussetts',
+                            text: "NFL Team's Budget",
                             fontSize: 25
                         },
                         legend:{
@@ -93,7 +104,7 @@ function teamCards(teams){
             div_theBack.appendChild(canvas_myChart)
             div_allCards.appendChild(div_theCard)
         })
-        div_theFront.appendChild(p_theFront)
+        div_theFront.append(p_theFront, img)
         div_theCard.append(div_theFront, div_theBack)
     })
 }
