@@ -10,15 +10,21 @@ function teamCards(teams){
         let div_theCard = document.createElement('div')
         let div_theFront = document.createElement('div')
         let div_theBack = document.createElement('div')
+
         div_theCard.className = "theCard"
         div_theFront.className = "theFront"
         div_theBack.className = "theBack"
+
         let p_theFront = document.createElement('p')
+
+
         p_theFront.innerText = team.name 
+
         team.budgets.forEach(budget => {
             let canvas_myChart = document.createElement('canvas');
             canvas_myChart.className = "myChart";
             canvas_myChart.getContext('2d');
+            
             //Global Options 
                 Chart.defaults.global.defaultFontFamily = 'lato'; 
                 Chart.defaults.global.defaultFontFamily = 18;

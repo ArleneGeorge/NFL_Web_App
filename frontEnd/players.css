@@ -1,7 +1,11 @@
 
+ 
  .player-card-container{
     display:flex;
     justify-content: space-evenly;
+    padding-top: 5rem;
+    
+   
  }
 
  .player-theCard{
@@ -16,7 +20,8 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background: #28ffa5;
+    background-image: url("https://cdna.4imprint.com/prod/extras/004795/358639/700/1.jpg")
+    background-color: rgba(238, 238, 240, 0.4);
     color: #333;
     display:flex; 
     justify-content: center; 
@@ -38,3 +43,16 @@
 .player-theCard:hover{
    transform: rotateY(180deg);
 }
+
+
+
+ body{
+    background-image: url("https://newsroom.cisco.com/documents/10157/14740/nfl-football-realtime-feature_1200x675_hero_091317.jpg/213e019f-4c34-456a-b316-e15413192bfd?t=1505336813842" );
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+    
+}
+

@@ -47,13 +47,16 @@ const query  = searchParams.get("id")
        div_player_theFront.className = "player-theFront"
        div_player_theBack.className = "player-theBack"
        
-       let h1 = document.createElement("h1")
+       let h3 = document.createElement("h3")
        let p = document.createElement("p")
+       let h4 = document.createElement('h4')
        p.className = "player-stats"
-       h1.className = "player-name"
-       h1.innerHTML = `<a href="https://en.wikipedia.org/wiki/${player.first_name}_${player.last_name}">${player.first_name} ${player.last_name}</h1>`
+       h3.className = "player-name"
+       h3.innerHTML = `<a href="https://en.wikipedia.org/wiki/${player.first_name}_${player.last_name}"> \n\n\n\n\n ${player.first_name} ${player.last_name}</h3>`
+       h4.innerHTML = `${player.number}`
        p.innerText = `Jersey Number: ${player.number} \n age: ${player.age} \n Birth Place: ${player.birth_place} \n High School Attended: ${player.high_school} \n College Attended:  ${player.college} \n Football Position: ${player.position} \n Height: ${player.height} inches \n Weight: ${player.weight} lbs \n Seasons Played:  ${player.experience} \n`
-       div_player_theFront.appendChild(h1)
+       div_player_theFront.appendChild(h3)
+       div_player_theFront.appendChild(h4)
        div_player_theBack.appendChild(p)
        div_player_theCard.append(div_player_theFront, div_player_theBack)
        div_player_cards.appendChild(div_player_theCard)

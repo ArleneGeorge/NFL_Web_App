@@ -56,7 +56,7 @@ time, mark, audio, video {
     text-shadow: 2px 2px #b40606;
     font-size: 20px;
     padding-top: 2rem;
-    padding-left: 25rem;
+    padding-left: 18rem;
 
 }
 
@@ -87,6 +87,7 @@ body{
     overflow: hidden;
     text-align: center;
     height: 50rem;
+    padding-top: 5rem;
 }
 
 .filterByDivision{
@@ -95,6 +96,7 @@ body{
     text-shadow: 2px 2px #b40606;
     font-size: 20px;
     padding-top: 2rem;
+    padding-left: 27rem;
 
 }
 
@@ -145,6 +147,21 @@ h2{
     text-shadow: 2px 2px #b40606;
     
 
+}
+
+h3{
+    padding-top: 4rem;
+    padding-left: 4rem; 
+    font-weight: 70px;
+    justify-self: center;
+}
+
+h4{
+    color: antiquewhite;
+    font-size: 50px;
+    text-shadow: 2px 2px #b40606;
+    padding-bottom: 10rem; 
+    padding-left: 11rem; 
 }
 
 
@@ -208,18 +225,20 @@ padding-left: 4rem;
 
 }
 
-
+/* budget cards css */
 
 .allCards{
     display:flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    
  }
  .theCard{
     width: 300px;
     height: 300px;
     transform-style: preserve-3d;
     transition: 0.5s;
+    
  }
  .theCard:hover{
     transform: rotateY(180deg)
@@ -229,8 +248,7 @@ padding-left: 4rem;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background: #28ffa5;
-    color: #333;
+    background-color: rgba(2, 2, 49, 0.8);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -240,8 +258,7 @@ padding-left: 4rem;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background: #dfff28;
-    color: #333;
+    background-color: rgb(213, 213, 214);
     transform: rotateY(180deg);
     display:flex;
     justify-content: center;
@@ -251,5 +268,53 @@ padding-left: 4rem;
 
 
 
+/* player-card css */
+
+ 
+ 
+ .player-card-container{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+ }
+
+ .player-theCard{
+    width: 500px;
+    height: 500px;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+ }
+
+ .player-theFront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url("https://dks.scene7.com/is/image/GolfGalaxy/MAF1001B_PureBlack_BCK?wid=1400&fmt=jpg"); 
+    opacity: 0.85;
+    /* background-color: rgba(238, 238, 240, 0.8); */
+    background-repeat: no-repeat;
+    background-size: 420px; 
+     }
 
 
+ .player-theBack{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: rgba(2, 2, 49, 0.8);
+    transform: rotateY(180deg);
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    
+ }
+
+.player-theCard:hover{
+   transform: rotateY(180deg);
+}
+
+.player-name{
+    height: 10rem;
+}
