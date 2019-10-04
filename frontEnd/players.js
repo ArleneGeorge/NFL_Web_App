@@ -56,7 +56,7 @@ const query  = searchParams.get("id")
        h4.innerHTML = `${player.number}`
        p.innerText = `Jersey Number: ${player.number} \n age: ${player.age} \n Birth Place: ${player.birth_place} \n High School Attended: ${player.high_school} \n College Attended:  ${player.college} \n Football Position: ${player.position} \n Height: ${player.height} inches \n Weight: ${player.weight} lbs \n Seasons Played:  ${player.experience} \n`
        div_player_theFront.appendChild(h3)
-       div_player_theFront.appendChild(h4)
+      //  div_player_theFront.appendChild(h4)
        div_player_theBack.appendChild(p)
        div_player_theCard.append(div_player_theFront, div_player_theBack)
        div_player_cards.appendChild(div_player_theCard)
