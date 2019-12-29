@@ -18,7 +18,7 @@ are installed.
 
 The home page lists all 32 NFL Teams when it starts up.You can filter to the AFC or NFC teams by clicking the AFC or NFC text just below the header. 
 
-![Filter Home Page](../readMePictures/filterHomePage.png)
+![Filter Home Page](/nfl_api/readMePictures/filterHomePage.png)
 
 If you click on one of the team names you will be taken to the team page that lists the players for the team.You can also click on the Team Budget in the header to see a breakdown on how much the team spent on each position. 
 
