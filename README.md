@@ -28,7 +28,7 @@ The budgets button in the header will show you all of the team name
 
 The Players button on the header will take you to a list of all NFL players.The position text just below the header allows you to filter the players by position.If you click on a player name you will be taken to the players flip card. 
 
-![alternativetext](readMePictures/filterPlayersPage.png)
+![alternativetext](/nfl_api/readMePictures/filterPlayersPage.png)
 
 
 Built by Arlene George and Benjamin Huy Pham 
